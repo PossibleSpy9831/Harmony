@@ -1,0 +1,8 @@
+sudo killall PerfPowerServices
+sudo lsof | grep -i '/var/db/powerlog'
+# en fait sudo lsof +D /var/db/powerlog/Library/BatteryLife
+sudo rm -f /var/db/powerlog/Library/BatteryLife/CurrentPowerlog.PLSQL*
+sudo rm -f /var/db/powerlog/Library/BatteryLife/Archives/*
+
+full
+sudo killall PerfPowerServices && sudo lsof +D /var/db/powerlog/Library/BatteryLife && sudo rm -f /var/db/powerlog/Library/BatteryLife/CurrentPowerlog.PLSQL* && sudo rm -f /var/db/powerlog/Library/BatteryLife/Archives/*

@@ -1,0 +1,30 @@
+# Python
+tests/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+!app/tests/
+!app/tests/**
+app/__pycache__/ 
+
+# Virtual environment
+.venv/
+venv/
+
+# IDE
+.vscode/
+
+# Local music library and databases
+.log/
+.play/
+.harmony/
+*.sqlite3
+*.db
+doc/TODO.md
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
